@@ -4,5 +4,6 @@
         <file>Style.qml</file>
         <file>MainScreen.qml</file>
         <file>SpeedometerTemplate.qml</file>
+        <file>RadialBarShape.qml</file>
     </qresource>
 </RCC>

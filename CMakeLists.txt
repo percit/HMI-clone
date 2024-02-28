@@ -17,6 +17,7 @@ qt_standard_project_setup(REQUIRES 6.5)
 
 add_executable(appHMI-clone
     main.cpp
+    radialbar.cpp
     qml/qml.qrc
 )
 

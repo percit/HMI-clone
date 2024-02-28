@@ -9,9 +9,18 @@ Rectangle {//tu najpewniej bedzie obrazek zamiast zwyklego recta
     color: Style.backgroundColor
     border {
         color: Style.grey1
-        width: 8
+        width: 5
     }
     radius: 152
+
+    RadialBarShape {
+        width: 250
+        height: 250
+        anchors.centerIn: parent
+        value: 30
+        dialType: RadialBarShape.DialType.MinToMax
+        startAngle: 230
+    }
 
     Text {
         id: centerText
