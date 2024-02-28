@@ -22,7 +22,7 @@ Item {
 
     property color backgroundColor: "transparent"
     property color dialColor: "transparent"
-    property color progressColor: "transparent"//Style.orange
+    property color progressColor: "transparent"
 
     property int penStyle: Qt.RoundCap
     property int dialType: RadialBarShape.DialType.FullDial

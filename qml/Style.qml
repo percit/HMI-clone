@@ -9,10 +9,3 @@ QtObject {
     readonly property color grey2: Qt.rgba(46 / 255, 47 / 255, 65 / 255, 1.0)
     readonly property color red: Qt.rgba(136 / 255, 59 / 255, 68 / 255, 1.0)
 }
-
-// kolor backgroundu rgb(35, 34, 52)
-// kolor pomarenczowy rgb(240, 151, 72)
-// kolor niebieski rgb(86, 203, 240)
-// kolor wyszarzaly (np w koleczku predkosciomierza rgb(86, 92, 110)
-// drugi wyszarzaly( ikonki) rgb(46, 47, 65)
-// czerwony w predkosciomierzy: rgb(136, 59, 68)
