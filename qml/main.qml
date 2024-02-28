@@ -7,5 +7,8 @@ Window {
     height: 470
     visible: true
     title: qsTr("HMI")
-    color: Style.backgroundColor
+    
+    MainScreen {
+        anchors.centerIn: parent
+    }
 }
