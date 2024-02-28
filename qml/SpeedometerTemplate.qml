@@ -14,12 +14,27 @@ Rectangle {//tu najpewniej bedzie obrazek zamiast zwyklego recta
     radius: 152
 
     RadialBarShape {
+        id: speedRevValue
         width: 250
         height: 250
         anchors.centerIn: parent
-        value: 30
+        value: 100
         dialType: RadialBarShape.DialType.MinToMax
         startAngle: 230
+        spanAngle: 260
+        progressColor: Style.orange
+    }
+
+    RadialBarShape {
+        id: batteryValue
+        width: 250
+        height: 250
+        anchors.centerIn: parent
+        value: 100
+        dialType: RadialBarShape.DialType.MinToMax
+        startAngle: 150
+        spanAngle: 60
+        progressColor: Style.blue
     }
 
     Text {
