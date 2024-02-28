@@ -4,11 +4,13 @@ Rectangle {
     width: 1022
     height: 470
     color: Style.backgroundColor
+    radius: 235
     border {
         color: Style.grey1
         width: 8
     }
-    radius: 235
+
+    property DataViewModel viewModel: DataViewModel {}
 
     SpeedometerTemplate {
         id: speedometer
@@ -17,7 +19,7 @@ Rectangle {
             left: parent.left
             leftMargin: 70
         }
-        centerText: "87"
+        centerText: viewModel.currentSpeed
         bottomText: "km/h"
     }
 
@@ -34,7 +36,7 @@ Rectangle {
             right: parent.right
             rightMargin: 70
         }
-        centerText: "3"
-        bottomText: "SPORT"
+        centerText: viewModel.currentGear
+        bottomText: viewModel.drivingMode
     }
 }

@@ -6,5 +6,6 @@
         <file>SpeedometerTemplate.qml</file>
         <file>RadialBarShape.qml</file>
         <file>MapModel.qml</file>
+        <file>DataViewModel.qml</file>
     </qresource>
 </RCC>
