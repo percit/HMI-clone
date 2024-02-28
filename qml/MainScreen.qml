@@ -21,6 +21,12 @@ Rectangle {
         bottomText: "km/h"
     }
 
+    MapModel {
+        anchors.centerIn:parent
+        width: 250
+        height: 300
+    }
+
     SpeedometerTemplate {
         id: revCounter
         anchors{

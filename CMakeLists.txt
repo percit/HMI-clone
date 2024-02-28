@@ -11,7 +11,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Quick)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Quick Positioning Location)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -22,7 +22,10 @@ add_executable(appHMI-clone
 )
 
 target_link_libraries(appHMI-clone
-    PRIVATE Qt6::Quick
+    PRIVATE
+    Qt6::Quick
+    Qt::Location
+    Qt::Positioning
 )
 
 include(GNUInstallDirs)
