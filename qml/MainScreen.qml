@@ -12,6 +12,15 @@ Rectangle {
 
     property DataViewModel viewModel: DataViewModel {}
 
+    TurnSignals {
+        anchors{
+            left: parent.left
+            leftMargin: 220
+            top: parent.top
+            topMargin: 30
+        }
+    }
+
     SpeedometerTemplate {
         id: speedometer
         anchors{
@@ -21,6 +30,15 @@ Rectangle {
         }
         centerText: viewModel.currentSpeed
         bottomText: "km/h"
+    }
+
+    Text {
+        id: rangeValue
+        anchors{
+            horizontalCenter: parent.horizontalCenter
+            top: parent.bottom
+        }
+        text: viewModel.range + " km"
     }
 
     MapModel {
