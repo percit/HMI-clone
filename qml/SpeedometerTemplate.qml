@@ -1,17 +1,13 @@
 import QtQuick
 
-Rectangle {//tu najpewniej bedzie obrazek zamiast zwyklego recta
+Image {
     property alias centerText: centerText.text
     property alias bottomText: bottomText.text
+    property bool isSpeedometer: true
 
     width: 304
     height:304
-    color: Style.backgroundColor
-    border {
-        color: Style.grey1
-        width: 5
-    }
-    radius: 152
+    source: isSpeedometer ? "qrc:/assets/left_circle.png" : "qrc:/assets/right_circle.png"
 
     RadialBarShape {
         id: speedRevValue
@@ -20,8 +16,8 @@ Rectangle {//tu najpewniej bedzie obrazek zamiast zwyklego recta
         anchors.centerIn: parent
         value: 100
         dialType: RadialBarShape.DialType.MinToMax
-        startAngle: 230
-        spanAngle: 260
+        startAngle: 227
+        spanAngle: 267
         progressColor: Style.orange
     }
 
@@ -32,8 +28,8 @@ Rectangle {//tu najpewniej bedzie obrazek zamiast zwyklego recta
         anchors.centerIn: parent
         value: 100
         dialType: RadialBarShape.DialType.MinToMax
-        startAngle: 150
-        spanAngle: 60
+        startAngle: 152
+        spanAngle: 58
         progressColor: Style.blue
     }
 

@@ -28,6 +28,7 @@ Rectangle {
             left: parent.left
             leftMargin: 70
         }
+        isSpeedometer: true
         centerText: viewModel.currentSpeed
         bottomText: "km/h"
     }
@@ -49,6 +50,7 @@ Rectangle {
 
     SpeedometerTemplate {
         id: revCounter
+        isSpeedometer: false
         anchors{
             verticalCenter: parent.verticalCenter
             right: parent.right

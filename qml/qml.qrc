@@ -10,5 +10,9 @@
         <file>TurnSignals.qml</file>
         <file>assets/arrowleft.png</file>
         <file>assets/arrowright.png</file>
+        <file>assets/left_circle.png</file>
+        <file>assets/right_circle.png</file>
+        <file>assets/indicators.png</file>
+        <file>assets/charging_station_distance.png</file>
     </qresource>
 </RCC>
