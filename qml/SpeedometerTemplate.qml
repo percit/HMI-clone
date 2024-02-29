@@ -4,6 +4,8 @@ Image {
     property alias centerText: centerText.text
     property alias bottomText: bottomText.text
     property bool isSpeedometer: true
+    property real orangeValue: 0
+    property real blueValue: 0
 
     width: 304
     height:304
@@ -14,7 +16,7 @@ Image {
         width: 250
         height: 250
         anchors.centerIn: parent
-        value: 100
+        value: orangeValue
         dialType: RadialBarShape.DialType.MinToMax
         startAngle: 227
         spanAngle: 267
@@ -26,7 +28,7 @@ Image {
         width: 250
         height: 250
         anchors.centerIn: parent
-        value: 100
+        value: blueValue
         dialType: RadialBarShape.DialType.MinToMax
         startAngle: 152
         spanAngle: 58

@@ -3,8 +3,8 @@ import QtQuick
 Rectangle {
     width: 1022
     height: 470
-    color: Style.backgroundColor
     radius: 235
+    color: Style.backgroundColor
     border {
         color: Style.grey1
         width: 8
@@ -12,12 +12,12 @@ Rectangle {
 
     property DataViewModel viewModel: DataViewModel {}
 
-    TurnSignals {
+    Indicators {
+        width: 373; height: 68
         anchors{
-            left: parent.left
-            leftMargin: 220
+            horizontalCenter: parent.horizontalCenter
             top: parent.top
-            topMargin: 25
+            topMargin: 15
         }
     }
 
@@ -29,6 +29,8 @@ Rectangle {
             leftMargin: 70
         }
         isSpeedometer: true
+        orangeValue: viewModel.currentSpeed / 3.00
+        blueValue: viewModel.batteryValue
         centerText: viewModel.currentSpeed
         bottomText: "km/h"
     }
@@ -36,10 +38,13 @@ Rectangle {
     Text {
         id: rangeValue
         anchors{
-            horizontalCenter: parent.horizontalCenter
-            top: parent.bottom
+            horizontalCenter: speedometer.horizontalCenter
+            bottom: parent.bottom
+            bottomMargin: 45
         }
         text: viewModel.range + " km"
+        color: "white"
+        font.pixelSize: 20
     }
 
     MapModel {
@@ -55,17 +60,19 @@ Rectangle {
             bottom: parent.bottom
             bottomMargin: 30
         }
-        distanceValue: 30
+        distanceValue: viewModel.chargingStationDistance
     }
 
     SpeedometerTemplate {
         id: revCounter
-        isSpeedometer: false
         anchors{
             verticalCenter: parent.verticalCenter
             right: parent.right
             rightMargin: 70
         }
+        isSpeedometer: false
+        orangeValue: viewModel.revValue
+        blueValue: viewModel.fuelValue
         centerText: viewModel.currentGear
         bottomText: viewModel.drivingMode
     }

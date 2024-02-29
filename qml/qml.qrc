@@ -7,7 +7,7 @@
         <file>RadialBarShape.qml</file>
         <file>MapModel.qml</file>
         <file>DataViewModel.qml</file>
-        <file>TurnSignals.qml</file>
+        <file>Indicators.qml</file>
         <file>ChargingStationDistance.qml</file>
         
         <file>assets/arrowleft.png</file>
