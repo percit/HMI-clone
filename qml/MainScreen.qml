@@ -17,7 +17,7 @@ Rectangle {
             left: parent.left
             leftMargin: 220
             top: parent.top
-            topMargin: 30
+            topMargin: 25
         }
     }
 
@@ -43,9 +43,19 @@ Rectangle {
     }
 
     MapModel {
+        id: map
         anchors.centerIn:parent
         width: 250
         height: 300
+    }
+
+    ChargingStationDistance {
+        anchors {
+            horizontalCenter: map.horizontalCenter
+            bottom: parent.bottom
+            bottomMargin: 30
+        }
+        distanceValue: 30
     }
 
     SpeedometerTemplate {

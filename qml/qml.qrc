@@ -8,6 +8,8 @@
         <file>MapModel.qml</file>
         <file>DataViewModel.qml</file>
         <file>TurnSignals.qml</file>
+        <file>ChargingStationDistance.qml</file>
+        
         <file>assets/arrowleft.png</file>
         <file>assets/arrowright.png</file>
         <file>assets/left_circle.png</file>
